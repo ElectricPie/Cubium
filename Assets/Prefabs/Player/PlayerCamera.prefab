@@ -32,7 +32,7 @@ Transform:
   m_Children:
   - {fileID: 151698386226488037}
   m_Father: {fileID: 3118882319180676684}
-  m_LocalEulerAnglesHint: {x: 40, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 60.46, y: 0, z: 0}
 --- !u!114 &6506657244574401653
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -209,6 +209,8 @@ MonoBehaviour:
   m_arm: {fileID: 6506657244574401653}
   m_distancePerZoom: 0.1
   m_maxZoom: 5
+  m_pitchSpeed: 1
+  m_pitchLimits: {x: 20, y: 60}
 --- !u!114 &4683545008053486614
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -266,6 +268,22 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: a8f6bb18-bb8b-40e5-9663-d31db739c71b
     m_ActionName: Gameplay/Zoom[/Mouse/scroll/up]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6008387653646982127}
+        m_TargetAssemblyTypeName: Cubium.Player.PlayerCameraControls, Assembly-CSharp
+        m_MethodName: Pitch
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: eac1db4e-e26e-4fa2-9ead-623fcacd1b20
+    m_ActionName: Gameplay/PitchCamera
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Gameplay

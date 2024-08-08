@@ -15,13 +15,22 @@
                     "initialStateCheck": true
                 },
                 {
-                    "name": "Zoom",
+                    "name": "ZoomCamera",
                     "type": "Value",
                     "id": "a8f6bb18-bb8b-40e5-9663-d31db739c71b",
                     "expectedControlType": "Axis",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
+                },
+                {
+                    "name": "PitchCamera",
+                    "type": "Button",
+                    "id": "eac1db4e-e26e-4fa2-9ead-623fcacd1b20",
+                    "expectedControlType": "Button",
+                    "processors": "Invert",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -87,7 +96,7 @@
                     "interactions": "",
                     "processors": "Clamp(min=1,max=-1)",
                     "groups": "",
-                    "action": "Zoom",
+                    "action": "ZoomCamera",
                     "isComposite": true,
                     "isPartOfComposite": false
                 },
@@ -98,7 +107,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Zoom",
+                    "action": "ZoomCamera",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
@@ -109,7 +118,40 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Zoom",
+                    "action": "ZoomCamera",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "1D Axis",
+                    "id": "72ba8c7c-3fa2-4d77-8d45-5d173f2006ff",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PitchCamera",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "15342152-f249-4837-b3a3-40743657c08c",
+                    "path": "<Mouse>/delta/down",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PitchCamera",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "0b438869-c21d-4da0-8923-3eba79527ea5",
+                    "path": "<Mouse>/delta/up",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PitchCamera",
                     "isComposite": false,
                     "isPartOfComposite": true
                 }
