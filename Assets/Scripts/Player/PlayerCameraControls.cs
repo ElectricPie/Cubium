@@ -11,6 +11,8 @@ namespace Cubium.Player
         [SerializeField] private float m_maxZoom = 5.0f;
         [SerializeField] private float m_pitchSpeed = 10.0f;
         [SerializeField] private Vector2 m_pitchLimits = new Vector2(20.0f, 60.0f);
+        
+        private bool m_bPitchLocked = true;
 
         public void Zoom(InputAction.CallbackContext context)
         {
@@ -31,7 +33,7 @@ namespace Cubium.Player
         
         public void Pitch(InputAction.CallbackContext context)
         {
-            if (m_arm is null)
+            if (m_arm is null || m_bPitchLocked)
                 return;
             
             float pitchInput = context.ReadValue<float>();
@@ -50,6 +52,18 @@ namespace Cubium.Player
             }
             
             m_arm.transform.Rotate(Vector3.right, rotationAngle);
+        }
+        
+        public void UnlockPitch(InputAction.CallbackContext context)
+        {
+            if (context.performed)
+            {
+                m_bPitchLocked = false;
+            }
+            if (context.canceled)
+            {
+                m_bPitchLocked = true;
+            }
         }
     }
 }

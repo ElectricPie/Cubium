@@ -31,6 +31,15 @@
                     "processors": "Invert",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "UnlockCamera",
+                    "type": "Button",
+                    "id": "f21eff9f-e1c7-4e2a-8405-16788abe2ccb",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -154,6 +163,17 @@
                     "action": "PitchCamera",
                     "isComposite": false,
                     "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "2c612d6a-823b-4039-9b24-d75b5fc36992",
+                    "path": "<Mouse>/rightButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "UnlockCamera",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         }
