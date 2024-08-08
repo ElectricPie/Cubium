@@ -5,7 +5,8 @@ namespace Cubium.Player
 {
     public class PlayerMove : MonoBehaviour
     {
-        [SerializeField] private float m_movementSpeed = 5.0f;
+        [SerializeField] private float m_movementSpeed = 10.0f;
+        [SerializeField] private Bounds m_bounds = new Bounds(Vector3.zero, new Vector3(100.0f, 20.0f, 100.0f));
         
         private Vector3 m_moveDirection = Vector3.zero;
         
@@ -17,7 +18,16 @@ namespace Cubium.Player
 
         private void Update()
         {
-            transform.Translate(m_moveDirection * (m_movementSpeed * Time.deltaTime), Space.World);
+            Vector3 newPosition = transform.position + m_moveDirection * (m_movementSpeed * Time.deltaTime);
+
+            if (m_bounds.Contains(newPosition))
+            {
+                transform.position = newPosition;
+            }
+            else
+            {
+                transform.position = m_bounds.ClosestPoint(newPosition);
+            }
         }
     }
 }

@@ -190,7 +190,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 493f8d32e12d47938acd25519fdcbe9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_movementSpeed: 5
+  m_movementSpeed: 10
+  m_bounds:
+    m_Center: {x: 0, y: 0, z: 0}
+    m_Extent: {x: 50, y: 20, z: 50}
 --- !u!114 &6008387653646982127
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -205,6 +208,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_arm: {fileID: 6506657244574401653}
   m_distancePerZoom: 0.1
+  m_maxZoom: 5
 --- !u!114 &4683545008053486614
 MonoBehaviour:
   m_ObjectHideFlags: 0
