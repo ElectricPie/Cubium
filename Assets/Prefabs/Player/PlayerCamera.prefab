@@ -209,8 +209,9 @@ MonoBehaviour:
   m_arm: {fileID: 6506657244574401653}
   m_distancePerZoom: 0.1
   m_maxZoom: 5
-  m_pitchSpeed: 1
+  m_pitchSpeed: 100
   m_pitchLimits: {x: 20, y: 60}
+  m_yawSpeed: 100
 --- !u!114 &4683545008053486614
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -272,7 +273,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 6008387653646982127}
         m_TargetAssemblyTypeName: Cubium.Player.PlayerCameraControls, Assembly-CSharp
-        m_MethodName: Pitch
+        m_MethodName: Rotate
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
