@@ -1,11 +1,11 @@
 ﻿using UnityEngine;
 
-namespace Cubium
+namespace Cubium.SpatialControl
 {
     public class Arm : MonoBehaviour
     {
         [SerializeField] [Min(0)] private float m_armLength = 2.0f;
-
+        
         public float ArmLength => m_armLength;
         
         public void SetArmLength(float newLength)
@@ -32,7 +32,7 @@ namespace Cubium
         {
             UpdateChildPositions();
         }
-        
+
         private void UpdateChildPositions()
         {
             // Set the distance of the arm to the specified value
