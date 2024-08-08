@@ -6,9 +6,25 @@ namespace Cubium
     {
         [SerializeField] [Min(0)] private float m_armLength = 2.0f;
 
+        public float ArmLength => m_armLength;
+        
         public void SetArmLength(float newLength)
         {
             m_armLength = newLength;
+        }
+        
+        public void AddArmLength(float amount)
+        {
+            if (m_armLength + amount < 0)
+            {
+                m_armLength = 0;
+            }
+            else
+            {
+                m_armLength += amount;
+            }
+            
+            UpdateChildPositions();
         }
         
         

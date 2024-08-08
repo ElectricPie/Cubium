@@ -153,6 +153,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3118882319180676684}
   - component: {fileID: 1375321989573065838}
+  - component: {fileID: 6008387653646982127}
   - component: {fileID: 4683545008053486614}
   m_Layer: 0
   m_Name: PlayerCamera
@@ -190,6 +191,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_movementSpeed: 5
+--- !u!114 &6008387653646982127
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6629140918435964719}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 549dd876e24cd2b40bec533ee9beb96c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_arm: {fileID: 6506657244574401653}
+  m_distancePerZoom: 0.1
 --- !u!114 &4683545008053486614
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -231,6 +246,22 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 7834ae71-e424-48b1-bb51-306667c1ae5e
     m_ActionName: Gameplay/Move[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6008387653646982127}
+        m_TargetAssemblyTypeName: Cubium.Player.PlayerCameraZoom, Assembly-CSharp
+        m_MethodName: Zoom
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: a8f6bb18-bb8b-40e5-9663-d31db739c71b
+    m_ActionName: Gameplay/Zoom[/Mouse/scroll/up]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Gameplay
