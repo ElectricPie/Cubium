@@ -106,7 +106,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3118882319180676684}
-  - component: {fileID: 5463388544965332702}
+  - component: {fileID: 1375321989573065838}
   - component: {fileID: 4683545008053486614}
   m_Layer: 0
   m_Name: PlayerCamera
@@ -131,7 +131,7 @@ Transform:
   - {fileID: 151698386226488037}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5463388544965332702
+--- !u!114 &1375321989573065838
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -140,9 +140,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 6629140918435964719}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 228993287a494f498bb2cb145ed46db4, type: 3}
+  m_Script: {fileID: 11500000, guid: 493f8d32e12d47938acd25519fdcbe9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_movementSpeed: 5
 --- !u!114 &4683545008053486614
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -170,8 +171,8 @@ MonoBehaviour:
   m_ActionEvents:
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5463388544965332702}
-        m_TargetAssemblyTypeName: Cubium.Player.PlayerCamera, Assembly-CSharp
+      - m_Target: {fileID: 1375321989573065838}
+        m_TargetAssemblyTypeName: Cubium.Player.PlayerMove, Assembly-CSharp
         m_MethodName: Move
         m_Mode: 0
         m_Arguments:
