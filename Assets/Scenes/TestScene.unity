@@ -216,6 +216,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!4 &748184292 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 151698386226488037, guid: 10d5f3cb4d562fe49ab5a885d4e77f5d, type: 3}
+  m_PrefabInstance: {fileID: 819987961}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &819987961
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -224,6 +229,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1375321989573065838, guid: 10d5f3cb4d562fe49ab5a885d4e77f5d, type: 3}
+      propertyPath: m_camera
+      value: 
+      objectReference: {fileID: 748184292}
     - target: {fileID: 3118882319180676684, guid: 10d5f3cb4d562fe49ab5a885d4e77f5d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.5
@@ -263,14 +272,6 @@ PrefabInstance:
     - target: {fileID: 3118882319180676684, guid: 10d5f3cb4d562fe49ab5a885d4e77f5d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6008387653646982127, guid: 10d5f3cb4d562fe49ab5a885d4e77f5d, type: 3}
-      propertyPath: m_yawSpeed
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 6008387653646982127, guid: 10d5f3cb4d562fe49ab5a885d4e77f5d, type: 3}
-      propertyPath: m_pitchSpeed
-      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 6629140918435964719, guid: 10d5f3cb4d562fe49ab5a885d4e77f5d, type: 3}
       propertyPath: m_Name

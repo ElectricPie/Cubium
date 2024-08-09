@@ -194,6 +194,7 @@ MonoBehaviour:
   m_bounds:
     m_Center: {x: 0, y: 0, z: 0}
     m_Extent: {x: 50, y: 20, z: 50}
+  m_cameraTransform: {fileID: 151698386226488037}
 --- !u!114 &6008387653646982127
 MonoBehaviour:
   m_ObjectHideFlags: 0
